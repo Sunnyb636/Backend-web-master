@@ -1,0 +1,14 @@
+---
+ -  name: joining node to cluster
+    hosts: host1
+    become: true
+    tasks:
+    - name: run script
+      script: /home/ubuntu/script2.sh
+
+ -  name: joining node to k8 cluster
+    hosts: host2
+    become: true
+    tasks:
+    - name: run script
+      script: /home/ubuntu/script2.sh

@@ -1,0 +1,14 @@
+---
+ -  name: Install kubernetes
+    hosts: host1
+    become: true
+    tasks:
+    - name: run script
+      script: /home/ubuntu/script.sh
+
+ -  name: Install kubernetes
+    hosts: host2
+    become: true
+    tasks:
+    - name: run script
+      script: /home/ubuntu/script.sh
